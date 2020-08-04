@@ -14,4 +14,10 @@ See [Quick Start](https://oh-my-ocr.github.io/text_renderer/note/quick_start.htm
 Learn more at [documentation](https://oh-my-ocr.github.io/text_renderer/index.html)
 
 
+```
+pip install -r requirements.txt
 
+python main.py --config config/config.py
+
+python ./gen_config/label2lmdb.py 
+```
