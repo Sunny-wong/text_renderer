@@ -87,15 +87,15 @@ test_data = GeneratorCfg(
 #     ),
 # )
 
-# rand_data = GeneratorCfg(
-#     num_image=50,
-#     save_dir=OUT_DIR / "rand_corpus",
-#     render_cfg=RenderCfg(
-#         bg_dir=BG_DIR,
-#         perspective_transform=perspective_transform,
-#         corpus=RandCorpus(RandCorpusCfg(chars_file=CHAR_DIR / "chn.txt", **font_cfg),),
-#     ),
-# )
+rand_data = GeneratorCfg(
+    num_image=50,
+    save_dir=OUT_DIR / "rand_corpus",
+    render_cfg=RenderCfg(
+        bg_dir=BG_DIR,
+        perspective_transform=perspective_transform,
+        corpus=RandCorpus(RandCorpusCfg(chars_file=CHAR_DIR / "chn.txt", **font_cfg),),
+    ),
+)
 
 # eng_word_data = GeneratorCfg(
 #     num_image=50,
@@ -183,11 +183,11 @@ test_data = GeneratorCfg(
 
 # fmt: off
 configs = [
-  train_data,
-  test_data,
+#   train_data,
+#   test_data,
     # chn_data,
     # enum_data,
-    # rand_data,
+    rand_data,
     # eng_word_data,
     # same_line_data,
     # extra_text_line_data

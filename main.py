@@ -101,6 +101,7 @@ if __name__ == "__main__":
 
     dataset_cls = LmdbDataset if args.dataset == "lmdb" else ImgDataset
 
+    print(args.config)
     generator_cfgs = get_cfg(args.config)
 
     for generator_cfg in generator_cfgs:
